@@ -1,0 +1,67 @@
+@import './base.css';
+
+/* #app {
+  padding: 1rem;
+} */
+
+/* Fonts */
+/* Note: loading font's from url help load time */
+@font-face {
+  font-family: 'Orchestra';
+  src: url('https://ik.imagekit.io/invimgs0101/fccla/font/Orchestra%20DEMO_UD-aeJWCG.ttf?updatedAt=1737824716038')
+    format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('https://ik.imagekit.io/invimgs0101/fccla/font/Quicksand-VariableFont_wght_0S4CKgDNw.ttf?updatedAt=1737824782869')
+    format('opentype');
+  font-display: swap;
+}
+/* ID Fonts */
+#orcFont {
+  font-family: 'Orchestra', 'Times New Roman', sans-serif !important;
+}
+#quickFont {
+  font-family: 'Quicksand', 'Times New Roman', sans-serif !important;
+}
+
+/* Borders */
+.border-r-b {
+  border-bottom: 3px solid #bd2a2a !important;
+}
+.border-r-t {
+  border-top: 2px solid #bd2a2a !important;
+}
+.border-r-trbl {
+  border-top: 2px solid #bd2a2a !important;
+  border-right: 2px solid #bd2a2a !important;
+  border-bottom: 2px solid #bd2a2a !important;
+  border-left: 2px solid #bd2a2a !important;
+}
+.border-b-b {
+  border-bottom: 3px solid rgb(0, 0, 0) !important;
+}
+.border-b-l {
+  border-left: 1px solid rgb(0, 0, 0) !important;
+}
+.border-w-l {
+  border-left: 1px solid rgb(255, 255, 255) !important;
+}
+.border-b-trbl {
+  border-top: 1px solid rgb(0, 0, 0) !important;
+  border-right: 1px solid rgb(0, 0, 0) !important;
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+  border-left: 1px solid rgb(0, 0, 0) !important;
+}
+.border-b-trbl {
+  border-top: 1px solid rgb(0, 0, 0) !important;
+  border-right: 1px solid rgb(0, 0, 0) !important;
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+  border-left: 1px solid rgb(0, 0, 0) !important;
+}
+.border-b-rbl {
+  border-right: 1px solid rgb(0, 0, 0) !important;
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+  border-left: 1px solid rgb(0, 0, 0) !important;
+}
