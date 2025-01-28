@@ -35,7 +35,7 @@ export default {
         <v-col cols="12" class="my-8">
             <p id="orcFont" class="text-h3 text-primary mb-4">RESOURCES</p>
             <p class="ml-6">
-                Tools and insights to empower your journey.
+                Tools and insights to empower your journey.Click on cards or links for redirect to relevant resource.
             </p>
         </v-col>
         <!-- Section: Search -->
@@ -67,7 +67,7 @@ export default {
                                     {{ pdf.primary.pdf_name1[0].text }}
                                 </v-expansion-panel-title>
                                 <v-expansion-panel-text>
-                                    <a :href="pdf.primary.pdf_link.url" target="_blank">
+                                    <a :href="pdf.primary.pdf_link.url" target="_blank" style="color: black;">
                                         {{ pdf.primary.pdf_link.url }}
                                     </a>
                                 </v-expansion-panel-text>

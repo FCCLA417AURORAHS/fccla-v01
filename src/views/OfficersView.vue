@@ -35,7 +35,7 @@ export default {
 
 <template>
     <v-row>
-        <v-col cols="12" class="mt-n7 px-0 ">
+        <v-col cols="12" class="mt-n10 px-0 ">
             <v-img :scale="0.85" class=""
                 src="https://ik.imagekit.io/invimgs0101/fccla/imgs/tr:q-50/INV09910_MUgktwizp.JPG?updatedAt=1737935393732"
                 laz-src="https://ik.imagekit.io/invimgs0101/fccla/imgs/tr:q-1/INV09910_MUgktwizp.JPG?updatedAt=1737935393732"
@@ -48,8 +48,14 @@ export default {
             </v-img>
         </v-col>
         <!-- Section: Resources -->
-        <v-col cols="12" class="my-8">
+        <v-col cols="12" class="mb-4">
             <p id="orcFont" class="text-h3 text-primary mb-4">OFFICERS</p>
+            <p class="ml-6">
+                FCCLA officers are student leaders who guide the organization, plan events, and inspire members. They
+                uphold
+                FCCLA’s mission, promote leadership, and ensure the success of programs and initiatives.
+            </p>
+            <p class="ml-6 text-caption">**Click on officers below to view additional information</p>
         </v-col>
         <!-- Toggle & Search-->
         <v-col cols="12">

@@ -20,7 +20,6 @@ export default {
     components: {
     },
     mounted() {
-        console.log(this.apiFetch.eventsBucket)
     },
     computed: {},
     methods: {
@@ -45,6 +44,13 @@ export default {
         <!-- Section: Events -->
         <v-col cols="12" class="my-8">
             <p id="orcFont" class="text-h3 text-primary mb-4">EVENTS</p>
+            <p class="ml-6">
+                FCCLA events provide opportunities for members to develop leadership skills, showcase talents, and
+                connect with
+                peers. From conferences and workshops to competitive events, each experience fosters growth, teamwork,
+                and
+                career readiness.
+            </p>
         </v-col>
         <!-- Toggle & Search-->
         <v-col cols="12">
@@ -55,7 +61,7 @@ export default {
         </v-col>
         <!-- loop -->
         <v-col cols="12" align="center">
-            <v-sheet v-if="toggle === 0" height="800">
+            <v-sheet v-if="toggle === 0" height="800" style="overflow-y: auto">
                 <v-card v-for="(officer, i) in apiFetch.eventsBucket" :key="i" min-width="320"
                     class="pa-2 mb-4 border-b-trbl" rounded="lg" elevation="2" align="start">
                     <v-img class="rounded-lg"

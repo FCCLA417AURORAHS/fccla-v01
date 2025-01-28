@@ -53,7 +53,7 @@ export default {
 <template>
     <div>
         <v-app-bar app color="white" :elevation="0" density="compact" class="border-r-b">
-            <v-card width="90" class="ml-2 mr-n3 bg-transparent" elevation="0">
+            <v-card width="90" class="ml-2 mr-n5 bg-transparent" elevation="0">
                 <router-link to="/">
                     <v-img width="80" contain :src="localStore.logoW" :lazy-src="localStore.logoWLazy"
                         alt="Prayer in Unity">
@@ -66,7 +66,7 @@ export default {
                 </router-link>
             </v-card>
             <v-app-bar-title class="d-flex">
-                <p id="orcFont" class="text-subtitle-1 text-primary mt-2">- NURTURING & LEADING</p>
+                <p id="orcFont" class="text-subtitle-1 text-primary mt-2">- AURORA HIGH SCHOOL</p>
             </v-app-bar-title>
             <v-btn id="orcFont" v-if="!navDrawer" color="primary" icon="$FoodApple" @click="navDrawer = !navDrawer">
             </v-btn>

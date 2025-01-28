@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia'
 import { createClient } from '@prismicio/client'
-// import * as prismic from '@prismicio/client'
 
 // Create Prismic client
 const client = createClient('fccla-v01', {
@@ -14,34 +13,47 @@ export const useApiFetchStore = defineStore('apiFetch', {
     eventsBucket: [],
     awardsBucket: [],
     resourcesFetched: false,
+    fetchError: null,
   }),
   actions: {
     async fetchResources() {
       try {
+        // Fetch the master ref dynamically
+        const repository = await client.getRepository()
+        const masterRef = repository.refs.find((ref) => ref.isMasterRef).ref
+
         // Use Prismic client to fetch documents
         const documents = await client.get({
-          // ERROR: RED ID CHANGES
-          ref: 'Z5WzsxIAACkANnN5', // Your specific ref
+          ref: masterRef,
         })
 
-        // Assuming the first document contains your data
-        return documents.results[0].data
+        // Return the first document's data if available
+        if (documents.results.length) {
+          return documents.results[0].data
+        } else {
+          throw new Error('No documents found.')
+        }
       } catch (error) {
         console.error('Prismic fetch error:', error)
-        return []
+        this.fetchError = 'Failed to fetch resources from Prismic.'
+        return null
       }
     },
     filterResources(db) {
-      this.pdfBucket = db.body
-      this.officersBucket = db.body1
-      this.eventsBucket = db.body2
-      this.awardsBucket = db.body3
+      if (db) {
+        this.pdfBucket = db.body || []
+        this.officersBucket = db.body1 || []
+        this.eventsBucket = db.body2 || []
+        this.awardsBucket = db.body3 || []
+      }
     },
     async fetchHandler() {
       if (!this.resourcesFetched) {
-        let db = await this.fetchResources()
-        this.filterResources(db)
-        this.resourcesFetched = true
+        const db = await this.fetchResources()
+        if (db) {
+          this.filterResources(db)
+          this.resourcesFetched = true
+        }
       }
     },
   },

@@ -15,21 +15,21 @@ export default {
         {
           title: 'PARENT', text: 'Access resources and updates to stay involved in your child\'s education',
           links: [
-            { name: 'RESOURCES', internal: '/resources' },
+            { name: 'MEMBERSHIP', internal: '/membership' },
             { name: 'CONTACT US', internal: '/contact' },
           ]
         },
         {
           title: 'STUDENT', text: 'Discover student opportunities, events, and membership benefits',
           links: [
-            { name: 'MEMBERSHIP', internal: '/membership' },
             { name: 'EVENTS', internal: '/events' },
+            { name: 'OFFICERS', internal: '/officers' },
           ]
         },
         {
           title: 'TEACHER', text: 'Professional resources and leadership information for educators',
           links: [
-            { name: 'OFFICERS', internal: '/officers' },
+            { name: 'AWARDS', internal: '/awards' },
             { name: 'RESOURCES', internal: '/resources' },
           ]
         }
@@ -229,7 +229,7 @@ export default {
           </v-row>
         </v-col>
         <v-col cols="12" class="px-0 ">
-          <v-img class="border-r-b mb-n4"
+          <v-img class="border-r-b mb-n12"
             src="https://ik.imagekit.io/invimgs0101/fccla/imgs/file%20(1)_gm1F__twGm.png?updatedAt=1737830825287"
             lazy-src="https://ik.imagekit.io/invimgs0101/fccla/imgs/tr:q-1/file%20(1)_gm1F__twGm.png?updatedAt=1737830825287"
             height="300">
