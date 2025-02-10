@@ -2,9 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import EventsView from '../views/EventsView.vue'
-import MemberView from '../views/MemberView.vue'
+import AboutView from '../views/AboutView.vue'
 import OfficersView from '../views/OfficersView.vue'
-import AwardsView from '../views/AwardsView.vue'
 import ResourcesView from '../views/ResourcesView.vue'
 
 const router = createRouter({
@@ -26,19 +25,14 @@ const router = createRouter({
       component: EventsView,
     },
     {
-      path: '/membership',
-      name: 'membership',
-      component: MemberView,
+      path: '/about',
+      name: 'about',
+      component: AboutView,
     },
     {
       path: '/officers',
       name: 'officers',
       component: OfficersView,
-    },
-    {
-      path: '/awards',
-      name: 'awards',
-      component: AwardsView,
     },
     {
       path: '/resources',

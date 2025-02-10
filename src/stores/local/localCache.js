@@ -8,9 +8,8 @@ export const useLocalStore = defineStore('localCache', {
         children: [
           { name: 'HOME', path: '/', href: '' },
           { name: 'OFFICERS', path: '/officers', href: '' },
-          { name: 'MEMBERSHIP', path: '/membership', href: '' },
+          { name: 'ABOUT', path: '/about', href: '' },
           { name: 'EVENTS', path: '/events', href: '' },
-          { name: 'AWARDS', path: '/awards', href: '' },
           { name: 'RESOURCES', path: '/resources', href: '' },
           { name: 'CONTACT', path: '/contact', href: '' },
         ],

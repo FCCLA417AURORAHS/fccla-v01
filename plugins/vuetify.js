@@ -6,6 +6,7 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
 import { mdiFoodAppleOutline } from '@mdi/js'
 import { mdiFoodApple } from '@mdi/js'
 import { mdiChevronRight } from '@mdi/js'
+import { mdiChevronLeft } from '@mdi/js'
 import { mdiFileDocumentEditOutline } from '@mdi/js'
 import { mdiViewList } from '@mdi/js'
 import { mdiViewModule } from '@mdi/js'
@@ -60,6 +61,7 @@ export default createVuetify({
       FoodAppleOutline: mdiFoodAppleOutline,
       FileDocumentEditOutline: mdiFileDocumentEditOutline,
       ChevronRight: mdiChevronRight,
+      ChevronLeft: mdiChevronLeft,
       ViewList: mdiViewList,
       ViewModule: mdiViewModule,
       CalendarMonthOutline: mdiCalendarMonthOutline,

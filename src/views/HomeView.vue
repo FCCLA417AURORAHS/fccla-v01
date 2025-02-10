@@ -15,7 +15,7 @@ export default {
         {
           title: 'PARENT', text: 'Access resources and updates to stay involved in your child\'s education',
           links: [
-            { name: 'MEMBERSHIP', internal: '/membership' },
+            { name: 'ABOUT', internal: '/about' },
             { name: 'CONTACT US', internal: '/contact' },
           ]
         },
@@ -29,7 +29,7 @@ export default {
         {
           title: 'TEACHER', text: 'Professional resources and leadership information for educators',
           links: [
-            { name: 'AWARDS', internal: '/awards' },
+            { name: 'ABOUT', internal: '/about' },
             { name: 'RESOURCES', internal: '/resources' },
           ]
         }
@@ -39,14 +39,14 @@ export default {
           selected: false,
           name: 'FCCLA SCHOLARSHIPS',
           text: 'Discover scholarship opportunities available through FCCLA.',
-          link: '/awards',
+          link: '/about',
           image: 'https://ik.imagekit.io/invimgs0101/fccla/imgs/unnamed%20(6)_xd8DRPp5f.jpg?updatedAt=1737828682012'
         },
         {
           selected: false,
           name: 'AWARDS / RECOGNITION',
           text: 'Learn about awards and recognition programs offered by FCCLA.',
-          link: '/awards',
+          link: '/about',
           image: 'https://ik.imagekit.io/invimgs0101/fccla/imgs/unnamed%20(7)%20-%20Copy2_kRIXHrWqy.jpg?updatedAt=1737828682144'
         },
         {
@@ -80,9 +80,9 @@ export default {
 
 <template>
   <v-row>
-    <v-col cols="0" lg="2" class="d-none d-lg-flex">
+    <v-col cols="0" md="2" lg="4" class="d-none d-md-flex">
     </v-col>
-    <v-col cols="12" lg="8">
+    <v-col cols="12" md="8" lg="4">
       <v-row>
         <!-- Intro Images -->
         <v-col cols="6" class="pa-0">
@@ -157,7 +157,7 @@ export default {
         <v-col cols="12" class="mt-n3 px-0 ">
           <v-parallax :scale="0.85" class=""
             src="https://ik.imagekit.io/invimgs0101/fccla/imgs/unnamed%20(8)_OgftXDUu1.jpg?updatedAt=1737826616319"
-            height="300">
+            height="400">
             <template v-slot:placeholder>
               <div class="d-flex align-center justify-center fill-height">
                 <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>
@@ -174,9 +174,8 @@ export default {
             positioning members for greater success in their academic pursuits.
           </p>
           <v-row class="ml-6">
-            <v-btn to="awards" variant="outlined" append-icon="$ChevronRight" density="compact" rounded="0"
-              class="mr-4">
-              AWARDS
+            <v-btn to="about" variant="outlined" append-icon="$ChevronRight" density="compact" rounded="0" class="mr-4">
+              ABOUT
             </v-btn>
             <v-btn to="events" variant="outlined" append-icon="$ChevronRight" density="compact" rounded="0">
               ACTIVITIES
